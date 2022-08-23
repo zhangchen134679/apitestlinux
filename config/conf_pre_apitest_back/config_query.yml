@@ -1,0 +1,242 @@
+db:
+ # 数据库配置项
+ host: "120.78.128.25"
+ port: 3306
+ user: future
+ password : "123456"
+ charset: utf8
+ database: futureLoan
+
+logger:
+ # logging配置项
+ name: my_log
+ get_level: DEBUG
+ sh_level: INFO
+ fh_level: INFO
+ fh_file: log.txt
+
+email:
+ # email配置项
+ server: smtp.qq.com
+ sender: 924433468@qq.com
+ username: 924433468@qq.com
+ password: ogwhcrkjtzmbbegg
+ receiver: yu.liu@arvato.cn
+
+# host配置项
+host: https://dl-api.lorealchina.com/api/interface/third/vb/apitest
+
+excel:
+ # 测试用例配置项
+ kie: Arvato_query_kie.xlsx
+ lrp: Arvato_query_lrp.xlsx
+
+access_token:
+ # Loyalty供应商账号
+ kie:
+  username: admin
+  password: criusadmin
+ lrp:
+  username: crmlrp
+  password: j80yygvuagkszk9c
+ hr:
+  username: crmhr
+  password: o7dr3mlr4qs6e5p0
+ mg:
+  username: crmmg
+  password: q0p08tyrhucihkdd
+ sgmb:
+  username: crmsgmb
+  password: 7roqcy9bpqqvxh9b
+ gac:
+   username: crmgac
+   password: qibufilwam6daw0n
+ ysl:
+   username: crmysl
+   password: u11jm48cvxuyvs08
+ 3ce:
+   username: crm3ce
+   password: bvjd1jzldijnz4e0
+
+brand:
+ # 各品牌代码编号
+ mg: mg
+ hr: hr
+ lrp: lrp
+ kie: kie
+ gac: gac
+ 3ce: 3ce
+ ysl: ysl
+ sgmb: sgmb
+
+crm_store:
+ # kie: 替换用例数据时、可能会解析失败..这里直接在配置文件转义
+ # name: 官方旗舰店name
+ # deal_store_no: 官方旗舰店store
+ # offline_store_no: 会员基本信息更新..替换线下门店时用到
+ kie:
+  name: kiehls科颜氏官方旗舰店
+  deal_store_no: ChinaKiehl's969
+  replace_deal_store_no: ChinaKiehl\'s969
+  offline_store_no: ChinaKiehl\'sX00
+ lrp:
+  name: 理肤泉官方旗舰店
+  deal_store_no: ChinaLa Roche PosayTMALL
+  offline_store_no: ChinaLa Roche Posay0001O
+ mg:
+  name: 美即官方旗舰店
+  deal_store_no: ChinaMagicTG091106
+  offline_store_no: ChinaMagicSO0024G
+ hr:
+   name: hr赫莲娜官方旗舰店
+   deal_store_no: ChinaHelena Rubinstein972
+   offline_store_no: ChinaHelena RubinsteinH0005H
+ 3ce:
+  name: 3ce官方旗舰店
+  deal_store_no: CE3CNT
+  offline_store_no: 13660381G1
+ gac:
+  name: 阿玛尼美妆官方旗舰店
+  deal_store_no: ChinaArmaniMF0
+  offline_store_no: ChinaArmaniA70
+ ysl:
+  name: ysl圣罗兰美妆官方旗舰店
+  deal_store_no: ChinaYSL968
+  offline_store_no: ChinaYSLYE0
+ sgmb:
+  name: 勃朗圣泉官方旗舰店
+  deal_store_no: SGMBCNT
+  offline_store_no: 1001181F1
+
+crm_employee:
+ # 各品牌BA编码
+ # 查询BA接口用到....
+ mg: Magic BA
+ hr: P15DV50001
+ 3ce: 3CE00001
+ lrp: W13161
+ ysl: P51AO50001
+ gac: P16A200083
+ kie: P45A0500011
+ sgmb: SGMBWECHAT
+
+crm_product:
+ # 各品牌商品数据
+ mg:
+  code: G3037600
+  name: 美即山茶花盈润保湿面膜（5片装）
+ hr:
+  code: 20020580U
+  name: 赫莲娜睫毛膏卸妆水 125ml
+ lrp:
+  code: 07161290U
+  name: 理肤泉特护晒后修复乳 200ML
+ kie:
+  code: 8904180TU
+  name: 科颜氏坚果修护乳液 200ml 试
+ 3ce:
+  code: PAC000RS6D
+  name: 3CE VIP 618 三色眼影前补变价 @93
+ ysl:
+  code: L026640TU
+  name: 圣罗兰灵芝修护面霜 50ml 试
+ gac:
+   code: L4111902U
+   name: 阿玛尼光影底妆修颜液 7 30ml
+ sgmb:
+  code: D3361701
+  name: 勃朗圣泉专研修护舒缓修红霜 40ml
+
+crm_wechat:
+ # 企业微信BA绑定解绑
+ # ba_userid 用于初始化数据initialize..
+ # ba_userid 用于初始化数据initialize..用于企业微信BA绑定查询
+ opDate: "1995-04-09 00:00:00"
+ ba_userid: "ba_userid_8888"
+
+crm_member_tags:
+ # 各品牌存在动态标签的用户
+ # 用于查询动态标签接口
+ kie: "0000106698140"
+ lrp: "2245002HAO"
+
+crm_trade_no:
+ # 各品牌的订单流水号
+ # trade_no 用于初始化数据initialize..用于订单明细查询
+ # trade_time 用于初始化数据initialize..
+ online:
+  trade_no: "test_tradeNo_0000"
+  trade_time: "2020-09-09 09:59:50"
+ offline:
+  trade_no: "test_tradeNo_offline"
+  trade_time: "2020-09-09 09:59:50"
+
+test_member_data:
+ # 各品牌的会员数据..
+ # 通过封装好的re, 匹配用例中的标识.. 进行替换各品牌下此配置项的测试数据
+ # other_bind_open_id..辅助测试账号18538783563的媒体信息数据..已绑定的open_id,主要用于全渠道会员绑定状态查询接口..
+ # other_bind_tb_nick..辅助测试账号18538783563的媒体信息数据..已绑定的天猫nick,主要用于全渠道会员绑定状态查询接口..
+ # other_bind_jd_pin..辅助测试账号18538783563的媒体信息数据..已绑定的jd_pin,主要用于全渠道会员绑定状态查询接口..
+ # not_bind_mobile..辅助测试账号13213332698的媒体信息数据..已注册未绑定任何媒体信息,主要用于全渠道会员绑定状态查询接口..
+ # not_bind_mix_mobile..辅助测试账号13213332698的媒体信息数据..已注册未绑定任何媒体信息,主要用于全渠道会员绑定状态查询接口..
+ # hashMobile..哈希..sha256加密后的手机号,主要用于3.2.44 查询会员信息(专用）接口
+ # venDer_seq_code..用于初始化数据initialize积分变更用, 积分变更状态查询接口..
+ # venDer_code..用于初始化数据initialize积分变更用, 积分变更状态查询接口..
+ # sourceTag..用于初始化数据initialize设置自定义会员标签, 用于查询自定义会员标签接口
+ kie:
+  union_code: "458S0003POP"
+  cardno: "458S0003POP"
+  marsMemberNum: "458S0003POP"
+  mobile: "15890533563"
+  JDpin: "jd_pin_666666"
+  openId: "openId_666666"
+  unionId: "unionId_666666"
+  taobaoid: "nickname_666666"
+  other_bind_open_id: "openId_999999"
+  other_bind_tb_nick: "nickname_999999"
+  other_bind_jd_pin: "jd_pin_999999"
+  not_bind_mobile: "13213332698"
+  not_bind_mix_mobile: 1d40a11e1de015eae0adbb112e8d50c8
+  encryptMobile: 8a51e5897c9866bfbdb9fba9bc088e27
+  hashMobile: f208e4dbba98dc3ac97939f6f54905e817749b5f152fc5fd4123960b9254c958
+  vender_seq_code: "random_1599660788"
+  vender_code: "1"
+  sourceTag: "MRM"
+ lrp:
+  union_code: "2245002HAO"
+  cardno: "2245002HAO"
+  marsMemberNum: "2245002HAO"
+  mobile: "15890533563"
+  JDpin: "jd_pin_666666"
+  openId: "openId_666666"
+  unionId: "unionId_666666"
+  taobaoid: "nickname_666666"
+  other_bind_open_id: "openId_999999"
+  other_bind_tb_nick: "nickname_999999"
+  other_bind_jd_pin: "jd_pin_999999"
+  not_bind_mobile: "13213332698"
+  not_bind_mix_mobile: 48da6efa2eb727c00501b4e7a9fe1d46
+  encryptMobile: ff9af9f5e301762bf42b82d42d54dffd
+  hashMobile: f208e4dbba98dc3ac97939f6f54905e817749b5f152fc5fd4123960b9254c958
+  vender_seq_code: "random_1599660788"
+  vender_code: "1"
+  sourceTag: "MRM"
+ hr:
+  union_code: ""
+  cardno: ""
+  marsMemberNum: ""
+  mobile: "15890533563"
+  JDpin: "jd_pin_666666"
+  openId: "openId_666666"
+  unionId: "unionId_666666"
+  taobaoid: "nickname_666666"
+  other_bind_open_id: "openId_999999"
+  other_bind_tb_nick: "nickname_999999"
+  other_bind_jd_pin: "jd_pin_999999"
+  not_bind_mobile: "13213332698"
+  not_bind_mix_mobile: 1d40a11e1de015eae0adbb112e8d50c8
+  encryptMobile: 8a51e5897c9866bfbdb9fba9bc088e27
+  hashMobile: f208e4dbba98dc3ac97939f6f54905e817749b5f152fc5fd4123960b9254c958
+  vender_seq_code: "random_1599660788"
+  vender_code: "1"
+  sourceTag: "MRM"

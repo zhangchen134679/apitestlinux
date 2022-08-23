@@ -1,0 +1,285 @@
+# 数据库配置项
+db:
+ host: "120.78.128.25"
+ port: 3306
+ user: future
+ password : "123456"
+ charset: utf8
+ database: futureLoan
+
+# logging配置项
+logger:
+ name: my_log
+ get_level: DEBUG
+ sh_level: INFO
+ fh_level: INFO
+ fh_file: log.txt
+
+# email配置项
+email:
+ server: smtp.qq.com
+ sender: 924433468@qq.com
+ username: 924433468@qq.com
+ password: ogwhcrkjtzmbbegg
+ receiver: yu.liu@arvato.cn
+
+# host配置项
+host: https://dl-api.lorealchina.com/api/interface/third/vb/apitest
+
+test_standard:
+  # 造测试数据规范
+  order: test_arvato
+  names: abcdefghijk!@#lmnopq!@#rstuvwxyz
+
+# 测试用例配置项
+excel:
+ write_common: Arvato_write_common.xlsx
+ upload_order_info: Arvato_upload_order_info.xlsx
+ upload_message_info: Arvato_upload_message_info.xlsx
+
+# access_token
+access_token:
+ ks:
+  username: crmks
+  password: w8ppzwr7ngrdnbu0
+ mm:
+  username: crmmm
+  password: 6gs7nnuctxqu8la8
+ lp:
+  username: crmlp
+  password: a1fs8c76fjpz3hrd
+ ud:
+  username: crmud
+  password: k0x4iuunxn18z3sa
+ ac:
+  username: crmac
+  password: 7qrmpo5rk8y5cruu
+ hr:
+  username: crmhr
+  password: o7dr3mlr4qs6e5p0
+ mg:
+  username: crmmg
+  password: q0p08tyrhucihkdd
+ kie:
+  username: crmkie
+  password: qx88lhn8t0bv1ff5
+ lrp:
+  username: crmlrp
+  password: j80yygvuagkszk9c
+ sgmb:
+  username: crmsgmb
+  password: 7roqcy9bpqqvxh9b
+ gac:
+  username: crmgac
+  password: qibufilwam6daw0n
+ ysl:
+  username: crmysl
+  password: u11jm48cvxuyvs08
+ 3ce:
+  username: crm3ce
+  password: bvjd1jzldijnz4e0
+ shu:
+  username: crmshu
+  password: 1u7qcjtay74wtku1
+ mny:
+  username: crmmny
+  password: dqpjb4eig3to8cek
+ skc:
+  username: crmskc
+  password: tw3vyxpwyhb8f9t2
+ bio:
+  username: crmbio
+  password: 9i5l6zftxy1lrx5n
+ lancome:
+  username: crmlancome
+  password: bdtafi9vmie2k33o
+ cerave:
+  username: crmcerave
+  password: hr2tugtmtrficrfi
+
+brand:
+ # 品牌标识/俱乐部编码
+ ks: ks
+ mm: mm
+ lp: lp
+ ud: ud
+ ac: ac
+ mg: mg
+ hr: hr
+ lrp: lrp
+ kie: kie
+ gac: gac
+ 3ce: 3ce
+ ysl: ysl
+ shu: shu
+ mny: mny
+ skc: skc
+ bio: bio
+ sgmb: sgmb
+ lancome: lancome
+ cerave: cerave
+
+crm_store:
+  # kie: 替换用例数据时、可能会解析失败..这里直接在配置文件转义
+  # name: 官方旗舰店name
+  # deal_store_no: 官方旗舰店store
+  # offline_store_no: 会员基本信息更新..替换线下门店时用到
+ ks:
+  name: kerastase卡诗海外旗舰店
+  deal_store_no: ChinaKerastaseMBE382004K
+  offline_store_no: ChinaKerastase11405K0396
+ mm:
+  name: maisonmargiela香氛旗舰店
+  deal_store_no: M138034
+  offline_store_no: MMWC00001
+ mg:
+  name: 美即官方旗舰店
+  deal_store_no: ChinaMagicTG091106
+  offline_store_no: ChinaMagicSO0024G
+ hr:
+   name: hr赫莲娜官方旗舰店
+   deal_store_no: ChinaHelena Rubinstein972
+   offline_store_no: ChinaHelena RubinsteinH0005H
+ lp:
+  name: lorealpro海外旗舰店
+  deal_store_no: MBE382P002
+  offline_store_no: ChinaKerastase10110K0273
+ ud:
+  name: urbandecay官方海外旗舰店
+  deal_store_no: ChinaUDZ55
+  offline_store_no: ChinaUD02118
+ ac:
+  name: 欧珑官方旗舰店
+  deal_store_no: ChinaAtelier Cologne99Y
+  offline_store_no: ChinaAtelier CologneGF5
+ kie:
+  name: kiehls科颜氏官方旗舰店
+  deal_store_no: ChinaKiehl's969
+  replace_deal_store_no: ChinaKiehl\'s969
+  offline_store_no: ChinaKiehl\'sX00
+ lrp:
+  name: 理肤泉官方旗舰店
+  deal_store_no: ChinaLa Roche PosayTMALL
+  offline_store_no: ChinaLa Roche Posay0001O
+ 3ce:
+  name: 3ce官方旗舰店
+  deal_store_no: CE3CNT
+  offline_store_no: 13660381G1
+ gac:
+  name: 阿玛尼美妆官方旗舰店
+  deal_store_no: ChinaArmaniMF0
+  offline_store_no: ChinaArmaniA70
+ shu:
+  name: 植村秀官方旗舰店
+  deal_store_no: ChinaShu Uemura971
+  offline_store_no: ChinaShu UemuraSB0
+ ysl:
+  name: ysl圣罗兰美妆官方旗舰店
+  deal_store_no: ChinaYSL968
+  offline_store_no: ChinaYSLYE0
+ mny:
+   name: 美宝莲旗舰店
+   deal_store_no: IN0001M
+   offline_store_no: CE1691
+ skc:
+  name: 修丽可官方旗舰店
+  deal_store_no: ChinaSkinCeuticals99E
+  offline_store_no: ChinaSkinCeuticalsC05
+ bio:
+  name: biotherm碧欧泉官方旗舰店
+  deal_store_no: ChinaBiotherm970
+  offline_store_no: ChinaBiothermCB0
+ sgmb:
+  name: 勃朗圣泉官方旗舰店
+  deal_store_no: SGMBCNT
+  offline_store_no: 1001181F1
+ lancome:
+  name: lancome兰蔻官方旗舰店
+  deal_store_no: ChinaLancome976
+  offline_store_no: ChinaLancome450
+ cerave:
+  name: cerave适乐肤官方旗舰店
+  deal_store_no: ChinaCeraVe98A
+  offline_store_no: ChinaCeraVe100168451
+
+# 各品牌BA编码,test_query_employee.py
+crm_employee:
+ mg: Magic BA
+ hr: P15DV50001
+ lp: LPSH000025
+ ud: 1-F719-0
+ ac: P74AC50002
+ ks: 10110K0253Sk0001003
+ mm: ''
+ 3ce: 3CE00001
+ lrp: W13161
+ ysl: P51AO50001
+ gac: P16A200083
+ kie: P45A0500011
+ shu: 15Z1881
+ mny: SS128558
+ skc: P42N500015
+ bio: P07BM00022
+ sgmb: SGMBWECHAT
+ lancome: P011C00143
+ cerave: ''
+
+# 各品牌商品数据
+crm_product:
+ mg:
+  code: 'G3067400'
+  name: '美即祛斑面膜 25g'
+ hr:
+  code: '20002110U'
+  name: '赫莲娜清爽保湿乳液50ml'
+ lp:
+  code: 'E2989100U'
+  name: '沙龙洗护系列致臻赋活鎏金发膜 250ML'
+ ud:
+  code: 'F7760100'
+  name: 'Urban Decay放纵绒锻雾面哑光唇膏 - 尘世土棕 3.4g'
+ ac:
+  code: 'L7624800U'
+  name: '欧珑木兰迷情香水 100ML'
+ ks:
+  code: 'C224500969X'
+  name: '卡诗头皮系列新舒缓丝盈洗发水 1 L'
+ mm:
+  code: 'L5734101'
+  name: '梅森马吉拉无题香水 75ml'
+ lrp:
+  code: 'MB060100U'
+  name: '理肤泉特安舒缓润肤水 400ml'
+ kie:
+  code: 'S1435701U'
+  name: '科颜氏原香身体乳液 250ML'
+ 3ce:
+  code: 'G4034400'
+  name: '三熹玉 单色腮红#水红色 5G'
+ ysl:
+  code: 'LB435800U'
+  name: '圣罗兰丝绒唇釉 204 6ml'
+ gac:
+  code: 'L4457100U'
+  name: '阿玛尼炫彩漆光唇蜜 400 6.5ml'
+ shu:
+  code: 'F2270600U'
+  name: '植村秀光采嫩肤精华露 30ml'
+ mny:
+  code: 'G0810101'
+  name: '美宝莲密扇睫毛膏 9.7ml'
+ skc:
+  code: 'S2066901U'
+  name: '修丽可植萃精华面膜 60ml'
+ bio:
+  code: '09003620U'
+  name: '碧欧泉青春精华露 30ML'
+ sgmb:
+  code: 'D3485200'
+  name: '勃朗圣泉专研修护精华液 50ML'
+ lancome:
+  code: 'LD131100U'
+  name: '兰蔻全新精华肌底液 100ml'
+ cerave:
+  code: 'S3786600'
+  name: '适乐肤修护保湿润肤霜 100ml'
