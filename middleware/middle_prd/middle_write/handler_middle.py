@@ -22,7 +22,7 @@ data_address = {
     'va': 'data_prd',
     'vb': 'data_pre'
 }
-with open(dir_path + '\\middle_write\\' + 'test.txt', 'r') as f:
+with open(dir_path + '/middle_write/' + 'test.txt', 'r') as f:
     brand = f.read()
 read_conf_address = host_address[brand]
 read_data_address = data_address[brand]
